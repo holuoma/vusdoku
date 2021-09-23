@@ -9,100 +9,226 @@ const today = new Date(timeElapsed);
 const initialState = {
   products: [
     {
-      key: "product1",
+      key: "5SterneAnsparRente",
       docs: [
-        { id: 1,value:"document1", name: "document1" },
-        { id: 2,value:"document1", name: "document2" },
-        { id: 3,value:"document1", name: "document3" },
-        { id: 4,value:"document1", name: "document4" },
-        { id: 5,value:"document1", name: "document5" },
+        { id: 1, value: "alle", name: "Alle" },
+        { id: 2, value: "antraegeUndFormulare", name: "Anträge und Formulare" },
+        { id: 3, value: "beraterunterlagen", name: "Beraterunterlagen" },
+        { id: 4, value: "kundenunterlagen", name: "Kundenunterlagen" },
+        {
+          id: 5,
+          value: "produktinformationenUndbedingungen",
+          name: "Produktinformationen und Bedingungen"
+        }
       ]
     },
     {
-      key: "product2",
+      key: "5SterneSofortRente",
       docs: [
-        { id: 1,value:"document1", name: "document1" },
-        { id: 2,value:"document1", name: "document2" },
-        { id: 3,value:"document1", name: "document3" },
-        { id: 4,value:"document1", name: "document4" },
-        { id: 5,value:"document1", name: "document5" },
+        { id: 1, value: "alle", name: "Alle" },
+        { id: 2, value: "antraegeUndFormulare", name: "Anträge und Formulare" },
+        { id: 3, value: "beraterunterlagen", name: "Beraterunterlagen" },
+        { id: 4, value: "kundenunterlagen", name: "Kundenunterlagen" },
+        {
+          id: 5,
+          value: "produktinformationenUndbedingungen",
+          name: "Produktinformationen und Bedingungen"
+        }
       ]
     },
     {
-      key: "product3",
+      key: "basisRenteInvest",
       docs: [
-        { id: 1,value:"document1", name: "document1" },
-        { id: 2,value:"document1", name: "document2" },
-        { id: 3,value:"document1", name: "document3" },
-        { id: 4,value:"document1", name: "document4" },
-        { id: 5,value:"document1", name: "document5" },
+        { id: 1, value: "alle", name: "Alle" },
+        { id: 2, value: "antraegeUndFormulare", name: "Anträge und Formulare" },
+        { id: 3, value: "beraterunterlagen", name: "Beraterunterlagen" },
+        { id: 4, value: "kundenunterlagen", name: "Kundenunterlagen" },
+        {
+          id: 5,
+          value: "produktinformationenUndbedingungen",
+          name: "Produktinformationen und Bedingungen"
+        }
       ]
     },
     {
-      key: "product4",
+      key: "fondsrente",
       docs: [
-        { id: 1,value:"document1", name: "document1" },
-        { id: 2,value:"document1", name: "document2" },
-        { id: 3,value:"document1", name: "document3" },
-        { id: 4,value:"document1", name: "document4" },
-        { id: 5,value:"document1", name: "document5" },
+        { id: 1, value: "alle", name: "Alle" },
+        { id: 2, value: "antraegeUndFormulare", name: "Anträge und Formulare" },
+        { id: 3, value: "beraterunterlagen", name: "Beraterunterlagen" },
+        { id: 4, value: "kundenunterlagen", name: "Kundenunterlagen" },
+        {
+          id: 5,
+          value: "produktinformationenUndbedingungen",
+          name: "Produktinformationen und Bedingungen"
+        }
       ]
     },
-
+    {
+      key: "pflegeRente",
+      docs: [
+        { id: 1, value: "alle", name: "Alle" },
+        { id: 2, value: "antraegeUndFormulare", name: "Anträge und Formulare" },
+        { id: 3, value: "beraterunterlagen", name: "Beraterunterlagen" },
+        { id: 4, value: "kundenunterlagen", name: "Kundenunterlagen" },
+        {
+          id: 5,
+          value: "produktinformationenUndbedingungen",
+          name: "Produktinformationen und Bedingungen"
+        }
+      ]
+    },
+    {
+      key: "produktuebergreifend",
+      docs: [
+        { id: 1, value: "alle", name: "Alle" },
+        { id: 2, value: "antraegeUndFormulare", name: "Anträge und Formulare" },
+        { id: 3, value: "beraterunterlagen", name: "Beraterunterlagen" },
+        { id: 4, value: "kundenunterlagen", name: "Kundenunterlagen" },
+        {
+          id: 5,
+          value: "produktinformationenUndbedingungen",
+          name: "Produktinformationen und Bedingungen"
+        }
+      ]
+    }
   ],
   resultDocs: [
     {
-      key: "document1",
+      key: "antraegeUndFormulare",
       docs: [
-        { key: 1, value:"document1", name: "document",date:"9/21/2020", orderNumber:Math.floor(Math.random() * 26),  text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 2, value:"document2", name: "bocument",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26),  text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 3, value:"document3", name: "document3",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26),  text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 4, value:"document4", name: "document4",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26),  text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 5, value:"document5", name: "document5",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26),  text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
+        {
+          key: 1,
+          value: "antragAufVNWechsel",
+          name: "Antrag auf VN-Wechsel",
+          date: "07/2021",
+          orderNumber: Math.floor(Math.random() * 789),
+          download: ""
+        },
+        {
+          key: 2,
+          value: "antragAufZuzahlung",
+          name: "Antrag auf Zuzahlung",
+          date: "01/2019",
+          orderNumber: Math.floor(Math.random() * 789),
+          download: ""
+        },
+        {
+          key: 3,
+          value: "antragAufBezugsberichtigung",
+          name: "Antrag auf Bezugsberechtigung",
+          date: "07/2021",
+          orderNumber: "",
+          text: ""
+        },
+        {
+          key: 4,
+          value: "zusatzvereinbarungVnWechselAufVolljaehrigeVp",
+          name: "Zusatzvereinbarung VN Wechsel auf volljährige VP",
+          date: "01/2020",
+          orderNumber: Math.floor(Math.random() * 650),
+          download: ""
+        },
+        {
+          key: 5,
+          value: "eklaerungVnGemeinsam",
+          name: "Erklärung VN gemeinsam",
+          date: "01/2020",
+          orderNumber: Math.floor(Math.random() * 559),
+          download: ""
+        }
       ]
     },
     {
-      key: "document2",
+      key: "beraterunterlagen",
       docs: [
-        { key: 1, value:"document1", name: "document1",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 2, value:"document2", name: "document2",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 3, value:"document3", name: "document3",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 4, value:"document4", name: "document4",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 5, value:"document5", name: "document5",date:today.toLocaleDateString(), orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
+        {
+          key: 1,
+          value: "beitragstabellePP11",
+          name: "Beitragstabelle PP11",
+          date: "07/2021",
+          orderNumber: Math.floor(Math.random() * 789),
+          download: ""
+        },
+        {
+          key: 2,
+          value: "varioInvestBeraterpraesentation",
+          name: "VarioInvest - Beraterpräsentation",
+          date: "01/2019",
+          orderNumber: Math.floor(Math.random() * 789),
+          download: ""
+        },
+        {
+          key: 3,
+          value: "direktversicherungArbeitnehmerinformation",
+          name: "Direktversicherung - Arbeitnehmerinformation",
+          date: "07/2021",
+          orderNumber: "",
+          text: ""
+        },
+        {
+          key: 4,
+          value: "konsortialrenteBeraterpräsentation",
+          name: "Konsortialrente - Beraterpräsentation",
+          date: "01/2020",
+          orderNumber: Math.floor(Math.random() * 650),
+          download: ""
+        },
+        {
+          key: 5,
+          value: "faqPensionsfonds",
+          name: "FAQ Pensionsfonds",
+          date: "01/2020",
+          orderNumber: Math.floor(Math.random() * 559),
+          download: ""
+        }
       ]
     },
     {
-      key: "document3",
+      key: "kundenunterlagen",
       docs: [
-        { key: 1, value:"document1", name: "document1",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 2, value:"document2", name: "document2",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 3, value:"document3", name: "document3",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 4, value:"document4", name: "document4",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 5, value:"document5", name: "document5",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
+        {
+          key: 1,
+          value: "onepagerMinijob",
+          name: "Onepager Minijob Arbeitgeber",
+          date: "07/2021",
+          orderNumber: Math.floor(Math.random() * 789),
+          download: ""
+        },
+        {
+          key: 2,
+          value: "flyerBetriebsrentenManager",
+          name: "Flyer Betriebsrenten-Manager",
+          date: "01/2019",
+          orderNumber: Math.floor(Math.random() * 789),
+          download: ""
+        },
+        {
+          key: 3,
+          value: "beratungsunterlageGgfversorgung",
+          name: "Beratungsunterlage GGF Versorgung",
+          date: "07/2021",
+          orderNumber: "",
+          text: ""
+        },
+        {
+          key: 4,
+          value: "zusatzvereinbarungVnWechselAufVolljaehrigeVp",
+          name: "Zusatzvereinbarung VN Wechsel auf volljährige VP",
+          date: "01/2020",
+          orderNumber: Math.floor(Math.random() * 650),
+          download: ""
+        },
+        {
+          key: 5,
+          value: "eklaerungVnGemeinsam",
+          name: "Erklärung VN gemeinsam",
+          date: "01/2020",
+          orderNumber: Math.floor(Math.random() * 559),
+          download: ""
+        }
       ]
-    },
-    {
-      key: "document4",
-      docs: [
-        { key: 1, value:"document1", name: "document1",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 2, value:"document2", name: "document2",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 3, value:"document3", name: "document3",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 4, value:"document4", name: "document4",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 5, value:"document5", name: "document5",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-      ]
-    },
-    {
-      key: "document5",
-      docs: [
-        { key: 1, value:"document1", name: "document1",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 2, value:"document2", name: "document2",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
-        { key: 3, value:"document3", name: "document3",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 4, value:"document4", name: "document4",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-        { key: 5, value:"document5", name: "document5",date:today.toLocaleDateString(),orderNumber:Math.floor(Math.random() * 26), text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. " },
-      ]
-    },
-    
-
+    }
   ],
   currentDocuments:[],
   result:[],

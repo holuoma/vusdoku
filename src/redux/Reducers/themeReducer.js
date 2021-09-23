@@ -2,13 +2,27 @@ import { GET_THEME_FIELD } from "../Actions/types";
 
 const initialState = {
   fields:[
-    {id:1, name:"Fiels 1", value:"theme1"},
-    {id:2, name:"Fiels 2", value:"theme2"},
-    {id:3, name:"Fiels 3", value:"theme3"},
-    {id:4, name:"Fiels 4", value:"theme4"},
-    {id:5, name:"Fiels 5", value:"theme5"},
-   
+    { id: 1, name: "Alle", value: "alle" },
+    { id: 2, name: "Altersvorsorge", value: "altersvorsorge" },
+    { id: 3, name: "Baufinanzierungsschutz", value: "baufinanzierungsschutz" },
+    {
+      id: 4,
+      name: "Betriebliche Altersvorsorge",
+      value: "betrieblicheAltervorsorge"
+    },
+    { id: 5, name: "Einkommenabsicherung", value: "einkommenabsicherung" },
+    { id: 6, name: "Pflegeabsicherung", value: "pflegeabsicherung" },
+    { id: 7, name: "Sach-Firmenschutz", value: "sachFirmenschutz" },
+    {
+      id: 8,
+      name: "Sach-Kraftfahrtversicherung",
+      value: "kraftFahrtversicherung"
+    },
+    { id: 9, name: "Sach-Privatschutz", value: "sachPrivatschutz" }
   ]
+  
+
+
 };
 
 const themeReducer = (state = initialState, action) => {
