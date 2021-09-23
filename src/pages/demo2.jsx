@@ -8,7 +8,7 @@ import { useState } from "react";
 import Search from "../components/Search";
 import SimpleBar from "simplebar-react";
 import "simplebar/src/simplebar.css";
-//import factCheck from "../components/svg/fatCheck.svg";
+import factCheck from ".//factCheck.svg";
 
 const { Title } = Typography;
 
@@ -81,16 +81,19 @@ const Demo2 = () => {
         <Col xs={24} xl={16}>
           <Row style={{justifyContent: "center"}}>
             <Col className="col-span" span={7}  style={{marginRight: "5px"}}>
-              <Row classname="rowtopic">
-                <Col span={24}>
-                  <Title level={3}>Themenfeld</Title>
+              <Row classname="rowtopic" style={{marginRight: "5px", display: "flex"}}>
+                <Col span={24} style={{display: "flex"}}>
+                  <span>
+                  <img src={factCheck} alt="logo" className="fatcheck" style={{width: "2rem"}} />
+                  </span>
+                  <Title className="topic-label" style={{marginLeft: "1rem"}} level={3}>Themenfeld</Title>
                 </Col>
               </Row>
               <SimpleBar className="simplebar-tag"
                 style={{
                   height:"200px",
                   maxHeight: 200,
-                  padding: "20px 0px 5px 20px",
+                  padding: "10px 0px 5px 20px",
                   border: "1px solid #ddd",
                   borderRadius: "10px 0 0 10px"
                 }}
@@ -119,7 +122,7 @@ const Demo2 = () => {
                 style={{
                   height:"200px",
                   maxHeight: 200,
-                  padding: "20px 0px 5px 20px",
+                  padding: "10px 0px 5px 20px",
                   border: "1px solid #ddd",
                 }}
               >
@@ -151,7 +154,7 @@ const Demo2 = () => {
                 style={{
                   height:"200px",
                   maxHeight: 200,
-                  padding: "20px 0px 5px 20px",
+                  padding: "10px 0px 5px 20px",
                   border: "1px solid #ddd",
                   borderRadius: "0 10px 10px 0px"
                 }}

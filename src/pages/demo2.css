@@ -1,5 +1,15 @@
 .rowtopic {
     text-align: "center";
+    display: "flex";
+}
+    
+    .rowtopic img {
+      width: 2rem;
+      margin-right: 2rem;
+}
+
+.topic-label {
+  margin-left: 2rem;
 }
 
 .col-span {
