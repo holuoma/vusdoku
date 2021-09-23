@@ -1,11 +1,13 @@
 import React from "react";
 import { Row, Col, Typography, Button, Checkbox, Empty, Avatar } from "antd";
 import { useSelector, useDispatch } from "react-redux";
+import Select  from 'react-select';
 import { getProducts } from "../redux/Actions/productAction";
 import { getDocuments, getResult } from "../redux/Actions/documentActions";
 import BaseTable from "../components/BaseTable";
 import { useState } from "react";
 import Search from "../components/Search";
+import { components } from "react-select";
 
 
 
@@ -73,22 +75,27 @@ const Demo3 = () => {
   };
 
 
-  const indicatorSeparatorStyle = {
-    alignSelf: 'stretch',
-    marginBottom: 8,
-    marginTop: 8,
-    width: 1,
-  };
-  
 
     return (
-
-        <section>
-        
-          
-        </section>
+    <div>
+    {/*<span style={indicatorSeparatorStyle} {...fields.map((field) => (
+      key={field.id}>
+      onChange={() => onChangeField(field.value)}
+      >
+      {field.name} />;
+      </span>*/}
+        <Row >
+        <Col span={16} offset={4}>
+          {resultDocs && <Search setShowSearch={setShowSearch} />}
+          <BaseTable
+            columns={columns}
+            data={showSearch ? filteredDocuments : resultDocs}
+            rowKey="key"
+          />
+        </Col>
+      </Row>
+      </div>
     )
 };
-
 
 export default Demo3;

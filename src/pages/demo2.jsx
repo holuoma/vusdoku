@@ -71,18 +71,11 @@ const Demo2 = () => {
   const onChangeDocument = (checkedValues) => {
     dispatch(getResult(checkedValues));
   };
+
+
+  
   return (
     <>
-      <Row style={{ margin: "50px 0px" }}>
-        <Col
-          span={16}
-          offset={4}
-          style={{ textAlign: "center", backgroundColor: "#EDF2F7" }}
-        >
-          <Title level={3}>Dokumentenbiblothek</Title>
-        </Col>
-      </Row>
-
       <Row style={{margin:"20px 0px"}}>
         <Col span={16} offset={4}>
           <Row>

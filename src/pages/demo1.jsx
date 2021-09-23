@@ -54,15 +54,6 @@ const Demo1 = () => {
   return (
     <>
       <Row>
-        <Col
-          span={14}
-          offset={5}
-          style={{ textAlign: "center", backgroundColor: "#EDF2F7" }}
-        >
-          <Title level={3}>Dokumentenbibliothek</Title>
-        </Col>
-      </Row>
-      <Row>
         <Col span={14} offset={5}>
           <Collapse defaultActiveKey={["1"]}>
             <Panel header={`Themenfeld`} key={1}>
