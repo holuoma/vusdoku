@@ -15,7 +15,7 @@ function Home() {
         <Row>
       <Col span={24} style={{textAlign:"center"}}>
         <div className="site-layout-content">
-          <Title>Content will here</Title>
+          <Title>Dokumentenbibliothek</Title>
         </div>
 
       </Col>

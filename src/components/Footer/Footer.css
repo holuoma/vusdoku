@@ -1,0 +1,20 @@
+.footerText {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footerText > p,
+  .footerText > a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .copyright {
+    margin: auto;
+  }
+  
+  .copyright > a {
+    margin-left: 5px;
+  }
+  

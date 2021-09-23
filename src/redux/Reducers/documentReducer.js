@@ -99,6 +99,7 @@ const initialState = {
       docs: [
         {
           key: 1,
+          avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
           value: "antragAufVNWechsel",
           name: "Antrag auf VN-Wechsel",
           date: "07/2021",
@@ -193,7 +194,7 @@ const initialState = {
           name: "Onepager Minijob Arbeitgeber",
           date: "07/2021",
           orderNumber: Math.floor(Math.random() * 789),
-          download: ""
+          download: "svgpath"
         },
         {
           key: 2,

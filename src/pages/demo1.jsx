@@ -11,7 +11,7 @@ const { Title } = Typography;
 
 const columns = [
   {
-    title: "Name",
+    title: "Titel",
     dataIndex: "name",
     sorter: {
       compare: (a, b) => a.orderNumber - b.orderNumber,
@@ -19,7 +19,7 @@ const columns = [
     },
   },
   {
-    title: "Date",
+    title: "Stand",
     dataIndex: "date",
     sorter: {
       compare: (a, b) => a.date - b.date,
@@ -27,7 +27,7 @@ const columns = [
     },
   },
   {
-    title: "Order Number",
+    title: "Bestellnummer",
     dataIndex: "orderNumber",
     sorter: {
       compare: (a, b) => a.orderNumber - b.orderNumber,
@@ -59,13 +59,13 @@ const Demo1 = () => {
           offset={5}
           style={{ textAlign: "center", backgroundColor: "#EDF2F7" }}
         >
-          <Title level={3}>Dokumentenbiblothek</Title>
+          <Title level={3}>Dokumentenbibliothek</Title>
         </Col>
       </Row>
       <Row>
         <Col span={14} offset={5}>
           <Collapse defaultActiveKey={["1"]}>
-            <Panel header={`Theme Fields`} key={1}>
+            <Panel header={`Themenfeld`} key={1}>
               <Row gutter={16}>
                 {fields.map((field) => (
                   <Col className="gutter-row" span={4} key={field.id}>
@@ -80,7 +80,7 @@ const Demo1 = () => {
                 ))}
               </Row>
             </Panel>
-            <Panel header={`Product`} key={2}>
+            <Panel header={`Produkt`} key={2}>
               {products.length ? (
                 products.map((product) => (
                   <Row key={product.id}>
@@ -98,7 +98,7 @@ const Demo1 = () => {
                 <Empty />
               )}
             </Panel>
-            <Panel header={`Document Type`} key={3}>
+            <Panel header={`Documententyp`} key={3}>
               <Row gutter={16}>
                 {documents.length ? (
                   documents.map((document) => (
@@ -116,7 +116,7 @@ const Demo1 = () => {
                 )}
               </Row>
             </Panel>
-            <Panel header={`Documentation`} key={4}>
+            <Panel header={`Dokumenten`} key={4}>
               {resultDocs && (
                 <Search setShowSearch={setShowSearch} />
               )}

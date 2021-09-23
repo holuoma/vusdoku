@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Typography, Button, Checkbox, Empty } from "antd";
+import { Row, Col, Typography, Button, Checkbox, Empty, Avatar } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { getProducts } from "../redux/Actions/productAction";
 import { getDocuments, getResult } from "../redux/Actions/documentActions";
@@ -8,12 +8,18 @@ import { useState } from "react";
 import Search from "../components/Search";
 import SimpleBar from "simplebar-react";
 import "simplebar/src/simplebar.css";
+//import factCheck from "../components/svg/fatCheck.svg";
 
 const { Title } = Typography;
 
 const columns = [
   {
-    title: "Name",
+    title: "",
+    dataIndex: "avatar",
+    width: "5%",
+  },
+  {
+    title: "Titel",
     dataIndex: "name",
     sorter: {
       compare: (a, b) => a.orderNumber - b.orderNumber,
@@ -21,7 +27,7 @@ const columns = [
     },
   },
   {
-    title: "Date",
+    title: "Stand",
     dataIndex: "date",
     sorter: {
       compare: (a, b) => a.date - b.date,
@@ -29,12 +35,18 @@ const columns = [
     },
   },
   {
-    title: "Order Number",
+    title: "Bestellnummer",
     dataIndex: "orderNumber",
     sorter: {
       compare: (a, b) => a.orderNumber - b.orderNumber,
       multiple: 1,
     },
+  },
+  {
+    title: "Herunterladen",
+    dataIndex: "download",
+    width: "10%",
+    
   },
 ];
 
@@ -74,13 +86,13 @@ const Demo2 = () => {
       <Row style={{margin:"20px 0px"}}>
         <Col span={16} offset={4}>
           <Row>
-            <Col span={8} style={{height:"200px"}}>
-              <Row style={{ textAlign: "center", backgroundColor: "#EDF2F7" }}>
+            <Col className="col-span" span={8}>
+              <Row classname="rowtopic">
                 <Col span={24}>
                   <Title level={3}>Themenfeld</Title>
                 </Col>
               </Row>
-              <SimpleBar
+              <SimpleBar className="simplebar-tag"
                 style={{
                   height:"200px",
                   maxHeight: 200,
@@ -91,12 +103,7 @@ const Demo2 = () => {
                 {fields.map((field) => (
                   <Row key={field.id}>
                     <Col span={24}>
-                      <Checkbox
-                        style={{
-                          marginBottom: "5px",
-                          color: "#243063",
-                          fontWeight: "bold",
-                        }}
+                      <Checkbox className="checkbox"
                         // value={product.value}
                         onChange={() => onChangeField(field.value)}
                       >
@@ -107,10 +114,10 @@ const Demo2 = () => {
                 ))}
               </SimpleBar>
             </Col>
-            <Col span={8} style={{height:"200px"}}>
-              <Row style={{ textAlign: "center", backgroundColor: "#EDF2F7" }}>
+            <Col className="col-span" span={8}>
+              <Row className="rowtopic">
                 <Col span={24}>
-                  <Title level={3}>Product</Title>
+                  <Title level={3}>Produkt</Title>
                 </Col>
               </Row>
               <SimpleBar
@@ -125,12 +132,7 @@ const Demo2 = () => {
                   products.map((product) => (
                     <Row key={product.id}>
                       <Col span={24}>
-                        <Checkbox
-                          style={{
-                            marginBottom: "5px",
-                            color: "#243063",
-                            fontWeight: "bold",
-                          }}
+                        <Checkbox className="checkbox"
                           // value={product.value}
                           onChange={() => onChangeProduct(product.value)}
                         >
@@ -144,10 +146,10 @@ const Demo2 = () => {
                 )}
               </SimpleBar>
             </Col>
-            <Col span={8}>
-              <Row style={{ textAlign: "center", backgroundColor: "#EDF2F7" }}>
+            <Col className="col-span" span={8}>
+              <Row className="rowtopic">
                 <Col span={24}>
-                  <Title level={3}>Document</Title>
+                  <Title level={3}>Dokumententyp</Title>
                 </Col>
               </Row>
               <SimpleBar
@@ -162,12 +164,7 @@ const Demo2 = () => {
                   documents.map((document) => (
                     <Row key={document.id}>
                       <Col span={24}>
-                        <Checkbox
-                          style={{
-                            marginBottom: "5px",
-                            color: "#243063",
-                            fontWeight: "bold",
-                          }}
+                        <Checkbox classname="checkbox"
                           // value={document.value}
                           onChange={() => onChangeDocument(document.value)}
                         >

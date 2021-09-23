@@ -1,0 +1,51 @@
+.rowtopic {
+    text-align: "center";
+}
+
+.col-span {
+    height:"200px";
+}
+
+.simplebar-tag {
+    height:"200px";
+    max-height: "200";
+    padding: "20px 0px 5px 20px";
+    border: "1px solid #ddd";
+}
+
+.checkbox {
+    margin-bottom: "5px";
+    color: "#243063";
+    font-weight: "bold";
+}
+
+.element.style {
+    height: "200px";
+    max-height: "200px";
+    padding: "20px 0px 5px 20px";
+    border: "1px solid #096dd9";
+}
+
+/** MEDIA QUERRIES **/
+
+/* For small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .topic-card-wrapper {
+      width: 100%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .topic-card-wrapper {
+      width: 33.3333333333%;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .topic-card-wrapper {
+      width: 18%;
+    }
+  }
+  

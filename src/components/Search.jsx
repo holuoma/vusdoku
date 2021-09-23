@@ -22,7 +22,7 @@ function CustomeSearch({ setShowSearch }) {
 
   return (
       <>
-      <Search placeholder="input search text" onSearch={onSearch} onChange={handleChange} style={{ width: 200 }} />
+      <Search placeholder="Suchwort eingeben..." allowClear onSearch={onSearch} onChange={handleChange} style={{ width: 200 }} />
       </>
   );
 }
