@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Typography, Button, Checkbox, Empty, Avatar } from "antd";
+import { Row, Col, Typography, Button, Checkbox, Empty, Avatar, Space } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { getProducts } from "../redux/Actions/productAction";
 import { getDocuments, getResult } from "../redux/Actions/documentActions";
@@ -21,6 +21,7 @@ const columns = [
   {
     title: "Titel",
     dataIndex: "name",
+    width: '70%',
     sorter: {
       compare: (a, b) => a.orderNumber - b.orderNumber,
       multiple: 1,
@@ -76,10 +77,10 @@ const Demo2 = () => {
   
   return (
     <>
-      <Row style={{margin:"20px 0px"}}>
-        <Col span={16} offset={4}>
-          <Row>
-            <Col className="col-span" span={8}>
+      <Row style={{margin:"20px 0px", width: "100%", justifyContent: "center"}}>
+        <Col xs={24} xl={16}>
+          <Row style={{justifyContent: "center"}}>
+            <Col className="col-span" span={7}  style={{marginRight: "5px"}}>
               <Row classname="rowtopic">
                 <Col span={24}>
                   <Title level={3}>Themenfeld</Title>
@@ -91,6 +92,7 @@ const Demo2 = () => {
                   maxHeight: 200,
                   padding: "20px 0px 5px 20px",
                   border: "1px solid #ddd",
+                  borderRadius: "10px 0 0 10px"
                 }}
               >
                 {fields.map((field) => (
@@ -107,7 +109,7 @@ const Demo2 = () => {
                 ))}
               </SimpleBar>
             </Col>
-            <Col className="col-span" span={8}>
+            <Col className="col-span" span={7} style={{marginRight: "5px"}}>
               <Row className="rowtopic">
                 <Col span={24}>
                   <Title level={3}>Produkt</Title>
@@ -139,7 +141,7 @@ const Demo2 = () => {
                 )}
               </SimpleBar>
             </Col>
-            <Col className="col-span" span={8}>
+            <Col className="col-span" span={7}>
               <Row className="rowtopic">
                 <Col span={24}>
                   <Title level={3}>Dokumententyp</Title>
@@ -151,6 +153,7 @@ const Demo2 = () => {
                   maxHeight: 200,
                   padding: "20px 0px 5px 20px",
                   border: "1px solid #ddd",
+                  borderRadius: "0 10px 10px 0px"
                 }}
               >
                 {documents.length ? (
@@ -174,9 +177,9 @@ const Demo2 = () => {
           </Row>
         </Col>
       </Row>
-      <Row >
-        <Col span={16} offset={4}>
-          {resultDocs && <Search setShowSearch={setShowSearch} />}
+      <Row style={{margin:"20px 0px", width: "100%", justifyContent: "center"}}>
+        <Col span={21}>
+          {resultDocs && <Search setShowSearch={setShowSearch}/>}
           <BaseTable
             columns={columns}
             data={showSearch ? filteredDocuments : resultDocs}

@@ -6,7 +6,7 @@ import { Route, BrowserRouter as Router,Switch  } from 'react-router-dom';
 import Demo1 from './pages/demo1'
 import Demo2 from './pages/demo2'
 import Demo3 from './pages/demo3'
-import NavBar from './components/NavBar'
+//import NavBar from './components/NavBar'
 import Header from "./components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer";
