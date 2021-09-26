@@ -99,7 +99,7 @@ const initialState = {
       docs: [
         {
           key: 1,
-          avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+          avatar: '',
           value: "antragAufVNWechsel",
           name: "Antrag auf VN-Wechsel",
           date: "07/2021",

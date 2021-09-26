@@ -16,7 +16,7 @@ function Header () {
                     <NavDropdown.Item eventKey="3"><Link to="/demo3">Demo 3</Link></NavDropdown.Item>
                 </NavDropdown>
             </div>
-            <div className="headerText">
+            <div className="headerText" style={{color: "white"}}>
                 <h1>Dokumentenbibliothek</h1>
             </div>
         </header>

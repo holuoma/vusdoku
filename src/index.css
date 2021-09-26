@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #22366F !important;
 }
 
 code {
@@ -15,5 +16,8 @@ code {
 
 html {
   font-size: 16px;
-  color: #23366f;
+}
+
+html, h2, h3, span {
+  color: #23366F !important;
 }

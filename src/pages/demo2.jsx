@@ -9,6 +9,10 @@ import Search from "../components/Search";
 import SimpleBar from "simplebar-react";
 import "simplebar/src/simplebar.css";
 import factCheck from ".//factCheck.svg";
+import apps from ".//apps.svg";
+import description from ".//description.svg";
+
+
 
 const { Title } = Typography;
 
@@ -84,7 +88,7 @@ const Demo2 = () => {
               <Row classname="rowtopic" style={{marginRight: "5px", display: "flex"}}>
                 <Col span={24} style={{display: "flex"}}>
                   <span>
-                  <img src={factCheck} alt="logo" className="fatcheck" style={{width: "2rem"}} />
+                  <img src={factCheck} alt="themenfeld" className="fatcheck" style={{width: "2rem"}} />
                   </span>
                   <Title className="topic-label" style={{marginLeft: "1rem"}} level={3}>Themenfeld</Title>
                 </Col>
@@ -112,10 +116,14 @@ const Demo2 = () => {
                 ))}
               </SimpleBar>
             </Col>
+
             <Col className="col-span" span={7} style={{marginRight: "5px"}}>
               <Row className="rowtopic">
-                <Col span={24}>
-                  <Title level={3}>Produkt</Title>
+                <Col span={24} style={{display: "flex"}}>
+                <span>
+                  <img src={apps} alt="produkt" className="apps" style={{width: "2rem"}} />
+                  </span>
+                  <Title style={{marginLeft: "1rem"}} level={3}>Produkt</Title>
                 </Col>
               </Row>
               <SimpleBar
@@ -144,10 +152,14 @@ const Demo2 = () => {
                 )}
               </SimpleBar>
             </Col>
+
             <Col className="col-span" span={7}>
               <Row className="rowtopic">
-                <Col span={24}>
-                  <Title level={3}>Dokumententyp</Title>
+                <Col span={24} style={{display: "flex"}}>
+                  <span>
+                  <img src={description} alt="dokumententyp" className="description" style={{width: "2rem"}} />
+                  </span>
+                  <Title style={{marginLeft: "1rem", fontColor: "#22366F"}} level={3}>Dokumententyp</Title>
                 </Col>
               </Row>
               <SimpleBar
@@ -181,7 +193,7 @@ const Demo2 = () => {
         </Col>
       </Row>
       <Row style={{margin:"20px 0px", width: "100%", justifyContent: "center"}}>
-        <Col span={21}>
+        <Col xs={21} xl={16}>
           {resultDocs && <Search setShowSearch={setShowSearch}/>}
           <BaseTable
             columns={columns}
